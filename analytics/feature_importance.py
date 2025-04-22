@@ -52,22 +52,7 @@ def calculate_feature_importance(
     print("\nFeature Importance:")
     print(importance_df)
 
-    # Plot the results
-    plt.figure(figsize=(12, 8))
-    bars = plt.barh(
-        importance_df["Feature"], importance_df["Importance"], xerr=importance_df["Std"]
-    )
-
-    # Add importance values as text on the bars
-    for i, bar in enumerate(bars):
-        plt.text(
-            bar.get_width() + bar.get_width() * 0.05,
-            bar.get_y() + bar.get_height() / 2,
-            f'{importance_df["Importance"].iloc[i]:.4f}',
-            va="center",
-        )
-
-    output_filepath = f"{run_dir}/feature_importance.png"
+    output_filepath = f"{run_dir}/feature_importance.csv"
     importance_df.to_csv(output_filepath, index=False)
 
     print(f"\nResults saved to {output_filepath}")
