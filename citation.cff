@@ -1,0 +1,12 @@
+cff-version: 1.2.0
+type: dataset
+message: "If you use this repository, please cite it as below."
+authors:
+  - family-names: "Chen"
+    given-names: "Sean"
+    orcid: "https://orcid.org/0000-0001-7160-4037"
+title: "SGExams Data Analysis"
+version: 1.0.0
+doi: 10.5281/zenodo.15269590
+date-released: 2025-04-23
+url: "https://github.com/seancze/sgexams-data-analysis"
