@@ -1,5 +1,8 @@
 # sgexams-data-analysis
 
+[![DOI](https://zenodo.org/badge/970448598.svg)](https://zenodo.org/badge/latestdoi/970448598)
+
+
 This repository contains data collected from the r/SGExams subreddit from July 2024 to March 2025. 
 
 Also, it contains code to train ML models to classify if a thread should be marked as "popular". We define a "popular" thread as one that received upvotes in the top 25% of all threads in the dataset. For this dataset, the thread must have received at least 41 upvotes.
